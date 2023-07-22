@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border-radius: '18px';
+}
+.todo-container {
+    text-align: center;
+    background-color: #ECE6F0;
+    border-radius: '18px';
+}
+h2{
+    font-size:36px;
+    color:#4CAF50 ;
+
+}
+.todos-card-container {
+    max-height: 400px; /* Set the maximum height for the scrollable container */
+    overflow-y: auto; /* Add vertical scroll to the container */
+    margin-top: 20px; /* Add some space between the form and the cards */
+    border: 1px solid #ccc; /* Add border to the container */
+    padding: 10px; /* Add padding to the container */
+}
+.todo-card {
+    background-color: #f9f9f9; /* Customize the card background color */
+    border: 1px solid #ddd; /* Customize the card border */
+    padding: 10px; /* Add padding to the card */
+    margin: 10px; /* Add margin to space out the cards */
+}
+.no-result-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-style: italic;
+}
+form label {
+    display: block;
+    }
+    input[type=text] {
+        height: 40px;
+        margin-bottom: 1rem;
+        border-radius: 7px;
+        opacity:.9;
+        text-align: center;}
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #ccc!important;
+            opacity: 1; /* Firefox */
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #ccc!important;
+                }
+                ::-ms-input-placeholder { /* Microsoft Edge */
+                    color: #ccc!important;
+                    }
